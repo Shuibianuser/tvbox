@@ -1,8 +1,9 @@
 {
-  "spider": "./moyu.php;md5;45e0cddf276d06a8d22bff07b00a9b76",
-  "wallpaper": "http://我不是.摸鱼儿.com/wallpaper/",
-  "logo": "https://web.wya6.com/d/super/moyuer.gif",
-  "warningText": "直播专用线路 内置多条直播线路",
+  "spider": "./dhys.jar",
+
+  "wallpaper": "https://深色壁纸.xxooo.cf/",
+
+  "warningText": "【毒盒影视】提示：📢长期维护切勿贩卖",
   
   "lives":[
       "name": "猫TV线路(EXO)",
