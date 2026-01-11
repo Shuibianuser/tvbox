@@ -1,11 +1,152 @@
 {
-  "spider": "./dhys.jar",
-
-  "wallpaper": "https://深色壁纸.xxooo.cf/",
-
-  "warningText": "【毒盒影视】提示：📢长期维护切勿贩卖",
-  
+  "spider": "./moyu.php;md5;45e0cddf276d06a8d22bff07b00a9b76",
+  "wallpaper": "http://我不是.摸鱼儿.com/wallpaper/",
+  "logo": "https://web.wya6.com/d/super/moyuer.gif",
+  "warningText": "摸鱼儿：资源来自网络，无盈利纯技术分享！[所有内容仅供学习使用，请勿用于违法及商业用途，请勿付费购买]",
+  "sites": [
+    {
+      "key": "豆豆",
+      "name": "♨️网盘升级┃全速启动",
+      "type": 3,
+      "api": "csp_DouDouGuard",
+      "searchable": 0,
+      "quickSearch": 0,
+      "filterable": 0
+    },
+    
+    {
+      "key": "本地",
+      "name": "📁文件┃本地┃资源",
+      "type": 3,
+      "jar": "./lib/moyuer.php;md5;36456a794b9f6d670931667d79bf8e9c",
+      "api": "csp_LocalFile"
+    },
+    {
+      "key": "QuarkYunPan",
+      "name": "📁文件┃夸克┃资源",
+      "type": 3,
+      "api": "csp_PanQuark",
+      "jar": "./lib/moyuer.php;md5;36456a794b9f6d670931667d79bf8e9c",
+      "searchable": 0,
+      "filterable": 0,
+      "changeable": 0,
+      "style": {
+        "type": "list",
+        "ratio": 1.433
+      },
+      "ext": "./lib/quarkShare.json"
+    },
+    {
+      "key": "AliYunPanV2",
+      "name": "📁文件┃阿里┃资源",
+      "type": 3,
+      "api": "csp_PanAli",
+      "jar": "./lib/moyuer.php;md5;36456a794b9f6d670931667d79bf8e9c",
+      "searchable": 0,
+      "filterable": 0,
+      "changeable": 0,
+      "style": {
+        "type": "list",
+        "ratio": 1.433
+      },
+      "ext": "./lib/aliShare.json"
+    },
+    {
+      "key": "UcYunPan",
+      "name": "📁文件┃优视┃资源",
+      "type": 3,
+      "api": "csp_PanUc",
+      "jar": "./lib/moyuer.php;md5;36456a794b9f6d670931667d79bf8e9c",
+      "searchable": 0,
+      "filterable": 0,
+      "changeable": 0,
+      "style": {
+        "type": "list",
+        "ratio": 1.433
+      },
+      "ext": "./lib/ucShare.json"
+    },
+    {
+      "key": "baidu",
+      "name": "📁文件┃百度┃资源",
+      "type": 3,
+      "api": "csp_PanBaiDu",
+      "jar": "./lib/moyuer.php;md5;36456a794b9f6d670931667d79bf8e9c",
+      "searchable": 0,
+      "filterable": 0,
+      "changeable": 0,
+      "style": {
+        "type": "list",
+        "ratio": 1.433
+      }
+    },
+    {
+      "key": "push_agent",
+      "name": "🛴手机┃推送┃链接",
+      "type": 3,
+      "api": "csp_PushGuard",
+      "searchable": 0,
+      "quickSearch": 0,
+      "ext": {
+        "Cloud-drive": "TVBox/Cloud-drive.txt",
+        "from": "4k|auto"
+      }
+    }
+  ],
+  "parses": [
+    {
+      "name": "聚合",
+      "type": 3,
+      "url": "Demo"
+    }
+  ],
+  "doh": [
+    {
+      "name": "Google",
+      "url": "https://dns.google/dns-query",
+      "ips": [
+        "8.8.4.4",
+        "8.8.8.8"
+      ]
+    },
+    {
+      "name": "Cloudflare",
+      "url": "https://cloudflare-dns.com/dns-query",
+      "ips": [
+        "1.1.1.1",
+        "1.0.0.1",
+        "2606:4700:4700::1111",
+        "2606:4700:4700::1001"
+      ]
+    },
+    {
+      "name": "AdGuard",
+      "url": "https://dns.adguard.com/dns-query",
+      "ips": [
+        "94.140.14.140",
+        "94.140.14.141"
+      ]
+    },
+    {
+      "name": "DNSWatch",
+      "url": "https://resolver2.dns.watch/dns-query",
+      "ips": [
+        "84.200.69.80",
+        "84.200.70.40"
+      ]
+    },
+    {
+      "name": "Quad9",
+      "url": "https://dns.quad9.net/dns-quer",
+      "ips": [
+        "9.9.9.9",
+        "149.112.112.112"
+      ]
+    }
+  ],
   "lives":[
+       
+    {
       "name": "猫TV线路(EXO)",
       "type": 0,
       "url": "http://rihou.cc:567/gggg.nzk",
@@ -22,13 +163,18 @@
       "ua": "okhttp/3",
       "epg": "https://epg.112114.eu.org/?ch={name}&date={date}",
       "logo": "https://epg.112114.eu.org/logo/{name}.png"
-    }
-    {
+    },
+     {
             "name": "卡卡西线路",
             "type": 0,
             "url": "https://gh-proxy.com/https://raw.githubusercontent.com/kakaxi-1/IPTV/main/ipv4.txt",
             "epg": "http://epg.112114.eu.org/?ch={name}&date={date}"
         },
+        "name": "冰茶直播",
+            "type": 0,
+            "url": "https://bc.188766.xyz/?ip=&mima=bingcha1130",
+            "epg": "http://epg.112114.eu.org/?ch={name}&date={date}"
+        }
 ],
   "flags": [
     "youku",
